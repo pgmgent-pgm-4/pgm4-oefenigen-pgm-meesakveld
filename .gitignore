@@ -1,0 +1,60 @@
+# Node.js
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.pdb
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.min.js
+*.min.css
+
+# Webpack
+webpack.config.js
+webpack.config.*.js
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+
+# Gatsby
+.cache/
+
+# ENV
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database
+knex-demo.sqlite3
