@@ -1,0 +1,11 @@
+{
+  "name": "01-lessen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "push": "git push -u origin main && git push -u pgm4 main"
+  },
+  "author": "",
+  "license": "ISC"
+}
