@@ -22,6 +22,11 @@ export default function Dimmer({ initialLight = 0 }) {
         <div>
             <button onClick={ handleClickAdd }>+</button>
             <button onClick={ handleClickLower }>-</button>
+            {/* Slider wiht onChange */}
+            <input type="range" min="0" max="100" value={ light } onChange={(e) => {
+                setLight(e.target.value);
+                document.body.style.backgroundColor = `#FFFF00${light}`
+            }}/>
         </div>
     )
 }
