@@ -1,0 +1,10 @@
+.studentCard {
+    display: block;
+    background-color: rgb(224 228 255);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
