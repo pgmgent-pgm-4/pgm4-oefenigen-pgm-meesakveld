@@ -6,6 +6,8 @@ import { ROUTES } from './routes/routes';
 import './styles/index.css'
 
 import { UserArea } from './context/UserContext';
+import { GET_ALL_TODOS } from './graphql/queries';
+import { useQuery } from '@apollo/client';
 
 const router = createBrowserRouter(createRoutesFromElements(
 	<Route path='/' element={<Root />} errorElement={<Error />}>
@@ -16,6 +18,13 @@ const router = createBrowserRouter(createRoutesFromElements(
 ));
 
 function App() {
+
+	const { loading, error, data } = useQuery(GET_ALL_TODOS);
+	if (loading) return <p>... Loading</p>;
+	if (error) return <p>... error</p>;
+
+	console.log(data.todos[1]);
+
 	return (
 		<UserArea>
 			<RouterProvider router={router} />
