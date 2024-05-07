@@ -12,7 +12,6 @@ const router = createBrowserRouter(createRoutesFromElements(
 		<Route path={ROUTES.home.path} element={<Home />} />,
 		<Route path={ROUTES.profile.path} element={<Profile />} />,
 		<Route path={ROUTES.login.path} element={<Login />} />,
-		<Route path={ROUTES.register.path} element={<Register />} />,
 	</Route>,
 ));
 
